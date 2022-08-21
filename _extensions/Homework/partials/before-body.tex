@@ -20,10 +20,10 @@ $abstract$
 \end{abstract}
 $endif$
 $if(keywords)$
-\begin{keywords}
+\textbf{
 \def\sep{;\ }
-$for(keywords/allbutlast)$$keywords$\sep $endfor$
+Keywords: $for(keywords/allbutlast)$$keywords$\sep $endfor$
 $for(keywords/last)$$keywords$$endfor$
-\end{keywords}
+}
 $endif$
 $endif$

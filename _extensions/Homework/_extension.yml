@@ -16,7 +16,7 @@ contributes:
           echo: false
     pdf:
       # define default configuration for the pdf version of your format
-      documentclass: scrbook
+      documentclass: scrartcl
       colorlinks: true
       # Content to add in header that your format is using
       header-includes: |
@@ -29,7 +29,6 @@ contributes:
         - "partials/_affiliations.tex"
       format-resources:
         # Add here the resources required for the PDF rendering
-        - scrbook.cls
         - orcidlink.sty
     html:
       # define default configuration for the html version of your format
