@@ -7,7 +7,7 @@ $-- Customize is needed, like below for printing the authors. Otherwise remove t
 $-- %%%%%%%%%%%%%%%%
 
 $if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+\title{$title$\thanks{CONTACT: $for(by-author)$$if(by-author.email)$$by-author.name.literal$. Email: \href{mailto:$by-author.email$}{\nolinkurl{$by-author.email$}}. $endif$$endfor$}}
 $endif$
 $if(subtitle)$
 \usepackage{etoolbox}
@@ -20,4 +20,3 @@ $if(subtitle)$
 $endif$
 \author{${ by-author:_authors.tex()[, ] }}
 
-\thanks{CONTACT: $for(by-author)$$if(by-author.email)$$by-author.name.literal$. Email: \href{mailto:$by-author.email$}{\nolinkurl{$by-author.email$}}. $endif$$endfor$}
